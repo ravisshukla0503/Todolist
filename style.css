@@ -1,0 +1,32 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#header{
+    background-color: lightcoral;
+    height: 100px;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+#add-todo{
+    padding-left: 100px;
+}
+#add-label{
+    font-size: xx-large;
+}
+#input-item{
+    font-size: x-large;
+    width: 800px;
+    margin-right: 60px;
+}
+#add-button{
+    width: 150px;
+    font-size: x-large;
+}
+#heading{
+    font-size: large;
+    color: gray;
+    padding-left: 100px;
+}
