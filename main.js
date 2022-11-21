@@ -1,61 +1,61 @@
-var btn=document.querySelector("#button");  //select button id
+let btn=document.querySelector(".button");  //select button id
 
-btn.addEventListener('click',submitform);   //add click event to submit button
+btn.addEventListener('click',submitForm);   //add click event to submit button
 
-function submitform(e){
+function submitForm(e){
 
     e.preventDefault();
 
-    var inputtext=document.getElementById('input-item').value;  //select your input text
+    let inputText=document.getElementById('inputItem').value;  //select your input text
     
-   // var li=document.createElement("li");
+   // let li=document.createElement("li");
     // Creating input field
 
-    var inputbox=document.createElement("input");
-    inputbox.setAttribute("id","sg");
-    inputbox.value=inputtext;
-    inputbox.style.backgroundColor="#f1f1f1";
-    inputbox.style.width="800px";
-    inputbox.style.fontSize="x-large";
-    inputbox.style.marginLeft="100px";
-    inputbox.style.marginBottom="30px";
+    let inputBox=document.createElement("input");
+    inputBox.setAttribute("id","sg");
+    inputBox.value=inputText;
+    inputBox.style.backgroundColor="#f1f1f1";
+    inputBox.style.width="800px";
+    inputBox.style.fontSize="x-large";
+    inputBox.style.marginLeft="100px";
+    inputBox.style.marginBottom="30px";
 
     //Creating Remove Button
 
-    var removebutton=document.createElement("button");
-    removebutton.setAttribute("id","rem-button");
-    removebutton.textContent="remove"
-    removebutton.style.backgroundColor="green";
-    removebutton.style.fontSize="x-large";
-    removebutton.style.marginLeft="60px";
-    removebutton.style.width="150px";
-    removebutton.style.color="white";
-    removebutton.addEventListener("click",()=>{
-    var p=removebutton.previousElementSibling;
+    let removeButton=document.createElement("button");
+    removeButton.setAttribute("id","rem-button");
+    removeButton.textContent="remove"
+    removeButton.style.backgroundColor="green";
+    removeButton.style.fontSize="x-large";
+    removeButton.style.marginLeft="60px";
+    removeButton.style.width="150px";
+    removeButton.style.color="white";
+    removeButton.addEventListener("click",()=>{
+    let p=removeButton.previousElementSibling;
     p.remove();
-    removebutton.remove();
+    removeButton.remove();
     })
 
-    var res=document.getElementById("form");
-    res.appendChild(inputbox);
-    res.appendChild(removebutton);
+    let res=document.getElementById("form");
+    res.appendChild(inputBox);
+    res.appendChild(removeButton);
 }
 
 //Reset all the todoList
 
-function Reset(){
-    var ress=document.getElementById("form");
+function reset(){
+    let ress=document.getElementById("form");
     while(ress.firstChild){
     ress.removeChild(ress.firstChild);
    }
-    Clear();
+    clear();
 }
 
 //Clear the input screen
 
-function Clear(){
-    var inputtext=document.getElementById('input-item');
-    inputtext.value="";
+function clear(){
+    let inputText=document.getElementById('inputItem');
+    inputText.value=" ";
 }
 
 
