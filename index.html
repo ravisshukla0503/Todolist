@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.jss" defer></script>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
     <title>TodoList</title>
 </head>
 <body>
-    <div id="flex-container">
+    <div class='flex-container'>
 
-        <div id="header">
-            <h1>Todo List</h1>
+        <div class='header'>
+            <h1>Todo-List</h1>
         </div>
 
-        <div id="add-todo">
-            <label id="add-label"><Strong>Add Item</Strong></label><br><br>
-            <input type="text" placeholder="Add todo worklist" id="input-item">
-            <span><button id="add-button">Submit</button></span>
+        <div class='add-todo'>
+            <label class='add-label'><Strong>Add Item</Strong></label><br><br>
+            <input type='text' placeholder='Add todo worklist' id='inputItem'>
+            <span>
+                  <button class='button'>Add-Todo</button>
+                  <button class='button' onclick='reset()'>Reset</button>
+                  <button class='button' onclick='clear()'>Clear</button>
+            </span>
         </div>
 
-        <div id="heading"><h1>Tasks</h1></div>
+        <div class='heading'><h1>Tasks</h1></div>
 
-        <div id="form">
-            
-        </div>
+        <div id='form'></div>
     </div>
+    <script src='main.js' defer></script>
 </body>
 </html>

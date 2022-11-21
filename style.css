@@ -1,31 +1,27 @@
-#container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#header{
+.header{
     background-color: lightcoral;
     height: 100px;
     text-align: center;
     font-size: xx-large;
     margin-bottom: 20px;
 }
-#add-todo{
+.add-todo{
     padding-left: 100px;
 }
-#add-label{
+.add-label{
     font-size: xx-large;
 }
-#input-item{
+#inputItem{
     font-size: x-large;
     width: 800px;
     margin-right: 60px;
 }
-#add-button{
+.button{
     width: 150px;
     font-size: x-large;
+    margin-right: 20px;
 }
-#heading{
+.heading{
     font-size: large;
     color: gray;
     padding-left: 100px;
